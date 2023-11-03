@@ -19,7 +19,7 @@ function getTodos(?int $time = null): array
 
 function getTodosOrFail(?int $time = null): array
 {
-	$todos = getTodos();
+	$todos = getTodos($time);
 
 	if (empty($todos))
 	{
